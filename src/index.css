@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --tw-container-max-width: 100%;
+    --tw-container-center: true;
+    --tw-container-padding: 1rem;
+    --tw-container-padding-sm: 2rem;
+    --tw-container-padding-lg: 3rem;
+    --tw-container-padding-xl: 4rem;
+    --tw-container-padding-2xl: 6rem;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--tw-container-padding);
+    padding-right: var(--tw-container-padding);
+  }
+
+  @screen sm {
+    .container {
+      padding-left: var(--tw-container-padding-sm);
+      padding-right: var(--tw-container-padding-sm);
+    }
+  }
+
+  @screen lg {
+    .container {
+      padding-left: var(--tw-container-padding-lg);
+      padding-right: var(--tw-container-padding-lg);
+    }
+  }
+
+  @screen xl {
+    .container {
+      padding-left: var(--tw-container-padding-xl);
+      padding-right: var(--tw-container-padding-xl);
+    }
+  }
+
+  @screen 2xl {
+    .container {
+      padding-left: var(--tw-container-padding-2xl);
+      padding-right: var(--tw-container-padding-2xl);
+    }
+  }
+}
