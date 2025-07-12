@@ -21,7 +21,7 @@ const RouteConfig = () => {
     useEffect(() => {
         const sessionToken = localStorage.getItem("token");
         if (sessionToken && !token) {
-            dispatch(setToken(sessionToken)); // Sync Redux with localStorage token
+            dispatch(setToken(sessionToken));
         }
     }, [dispatch, token]);
 
